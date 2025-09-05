@@ -20,13 +20,13 @@ public:
 			Q[rear] = val;
 			cout << val << " inserted, Successfully \n";
 		}
-		else if(((rear+1)%n) == front) {
+		else if(((rear+1)%n) == front) { 					    //Rear = Front - 1
 			cout << "Queue is Full \n";
 		}
 		else {
 			cout << "Enter value to insert: ";
 			cin >> val;
-			rear = (rear+1)%n ;
+			rear = (rear+1)%n ;									//For increment
 			Q[rear] = val;
 			cout << val << " inserted, Successfully \n";
 		}
@@ -42,7 +42,7 @@ public:
 		}
 		else {
 			cout << Q[front] << " deleted, Successfully \n";
-			front = (front+1)%n;
+			front = (front+1)%n;                                  //For increment
 		}
 	}
 	
